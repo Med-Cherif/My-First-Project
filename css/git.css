@@ -3,3 +3,159 @@
     padding: 0;
     box-sizing: border-box;
 }
+.first-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/algeria_first.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.first-page .flow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.first-page .nav{
+    display: flex;
+    justify-content: space-between;
+}
+.first-page .nav .img {
+    width: 148px;
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 69px;
+}
+.first-page .nav .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.first-page .nav .nav-bar ul{
+    list-style: none;
+    margin: 30px 16px 0 0;
+}
+
+.first-page .nav .nav-bar ul li{
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+}
+.first-page .nav .nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.first-page .nav .nav-bar ul li:hover a {
+    color: black;
+}
+.first-page .nav .nav-bar ul li a span{
+    width: 0;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 28px;
+    transition: .5s;
+}
+.first-page .nav .nav-bar ul li a:hover span{
+    width: 100%   
+}
+@media(max-width: 767px){
+    .first-page .nav{
+        display: block;
+    }
+    .first-page .nav .img{
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .first-page .nav .nav-bar ul li{
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+    .first-page .nav .nav-bar ul li a:hover span{
+        width: 9%;
+    }
+}
+
+.paragraph{
+    color: white;
+    margin-top: 100px;
+}
+.paragraph h2{
+    text-align: center;
+    font-size: 50px; 
+    font-weight: bold;
+}
+.paragraph p{
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 12px;
+    text-align: center;
+} 
+@media(max-width: 767px){
+    .paragraph h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    .paragraph p{
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 12px;
+    } 
+}
+
+/* second page */
+
+.second-page .container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.second-page .culture h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+}
+.second-page .culture p{
+    font-size: 20px;
+    padding-top: 15px;
+    text-align: center;
+    line-height: 1.3;
+}
+/* second page*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix{
+    clear: both;
+}
