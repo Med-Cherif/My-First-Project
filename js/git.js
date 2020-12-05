@@ -1,0 +1,1 @@
+window.scroll.bahavior = 'smooth'
